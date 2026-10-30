@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "amethyst",
+	"version": "${version}",
+	"name": "Amethyst Client",
+	"description": "A modular client-side utility mod for Minecraft 1.21.11: modules, HUD, profiles, and a custom Click GUI.",
+	"authors": [
+		"Amethyst"
+	],
+	"contact": {
+		"homepage": "https://github.com/amethyst-client/Amethyst-Client",
+		"sources": "https://github.com/amethyst-client/Amethyst-Client"
+	},
+	"license": "MIT",
+	"icon": "assets/amethyst/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.amethyst.client.AmethystClient"
+		]
+	},
+	"mixins": [
+		"amethyst.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
